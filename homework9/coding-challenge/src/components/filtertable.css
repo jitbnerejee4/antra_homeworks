@@ -1,0 +1,12 @@
+label{
+    margin-right: 10px;
+}
+
+table{
+    margin: 20px 0px;
+}
+td, th{
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+}
