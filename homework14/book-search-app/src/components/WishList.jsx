@@ -4,9 +4,12 @@ import {useSelector} from 'react-redux'
 export default function WishList({ deleteHandler }) {
     const wishlist = useSelector((state)=>state.wishListData.wishlist)
     console.log(wishlist)
-    if(!wishlist){
+    if(wishlist.length === 0){
         return(
-            <h2>No items in Wishlist!</h2>
+            <div className="mt-96">
+                <h2>No items in Wishlist!</h2>
+            </div>
+            
         )
     }else{
         return (

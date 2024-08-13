@@ -58,7 +58,7 @@ export default function ShowBooks({ handleItemClick }) {
         )
     }else{
         return(
-            <div>
+            <div className="mt-60">
                 <h2>No Results to show!</h2>
             </div>
         )
