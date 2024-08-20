@@ -56,7 +56,7 @@ test("renders fetched todos on mount", async () => {
 // TODO: Test component to handle API fetch failure and display error message
 test("handles API fetch failure", async () => {
     server.use(rest.get("https://jsonplaceholder.typicode.com/todos", (req, res, ctx) => {
-        return res(ctx.status(500))
+        return res(ctx.status(404))
     }))
 
     render(<TodoList/>)
